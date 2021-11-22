@@ -98,8 +98,12 @@
 		29E07D8B274B7B9A001B42EE /* simplify */ = {
 			isa = PBXGroup;
 			children = (
-				29E07D8C274B7B9A001B42EE /* simplifyApp.swift */,
-				29E07D8E274B7B9A001B42EE /* ContentView.swift */,
+				29E07DBB274B7E0E001B42EE /* App */,
+				29E07DBC274B7E1C001B42EE /* View */,
+				29E07DC0274B7E56001B42EE /* Data */,
+				29E07DBF274B7E4D001B42EE /* Model */,
+				29E07DBE274B7E42001B42EE /* Extension */,
+				29E07DBD274B7E36001B42EE /* Utility */,
 				29E07D90274B7B9D001B42EE /* Assets.xcassets */,
 				29E07D95274B7B9D001B42EE /* Persistence.swift */,
 				29E07D97274B7B9D001B42EE /* simplify.xcdatamodeld */,
@@ -131,6 +135,130 @@
 				29E07DAE274B7B9E001B42EE /* simplifyUITestsLaunchTests.swift */,
 			);
 			path = simplifyUITests;
+			sourceTree = "<group>";
+		};
+		29E07DBB274B7E0E001B42EE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				29E07D8C274B7B9A001B42EE /* simplifyApp.swift */,
+				29E07D8E274B7B9A001B42EE /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		29E07DBC274B7E1C001B42EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				29E07DC1274B7EB0001B42EE /* Home */,
+				29E07DC2274B7ED1001B42EE /* CategoryList */,
+				29E07DC3274B7F1B001B42EE /* ProductsList */,
+				29E07DC4274B7F29001B42EE /* ProductDetail */,
+				29E07DC9274B80FF001B42EE /* ProductAR */,
+				29E07DC6274B7FA2001B42EE /* Profile */,
+				29E07DC5274B7F88001B42EE /* Cart */,
+				29E07DCA274B8111001B42EE /* CartAR */,
+				29E07DC7274B7FF5001B42EE /* SignIn */,
+				29E07DC8274B8022001B42EE /* SignOut */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		29E07DBD274B7E36001B42EE /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		29E07DBE274B7E42001B42EE /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		29E07DBF274B7E4D001B42EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		29E07DC0274B7E56001B42EE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		29E07DC1274B7EB0001B42EE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		29E07DC2274B7ED1001B42EE /* CategoryList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CategoryList;
+			sourceTree = "<group>";
+		};
+		29E07DC3274B7F1B001B42EE /* ProductsList */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProductsList;
+			sourceTree = "<group>";
+		};
+		29E07DC4274B7F29001B42EE /* ProductDetail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProductDetail;
+			sourceTree = "<group>";
+		};
+		29E07DC5274B7F88001B42EE /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		29E07DC6274B7FA2001B42EE /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		29E07DC7274B7FF5001B42EE /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		29E07DC8274B8022001B42EE /* SignOut */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SignOut;
+			sourceTree = "<group>";
+		};
+		29E07DC9274B80FF001B42EE /* ProductAR */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProductAR;
+			sourceTree = "<group>";
+		};
+		29E07DCA274B8111001B42EE /* CartAR */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CartAR;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
