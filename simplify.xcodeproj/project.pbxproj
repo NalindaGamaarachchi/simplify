@@ -23,6 +23,7 @@
 		29E07DCC2750A358001B42EE /* ProductARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E07DCB2750A358001B42EE /* ProductARView.swift */; };
 		29E66CDD2750B7B600410B17 /* ControlVisibilityToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E66CDC2750B7B600410B17 /* ControlVisibilityToggleButton.swift */; };
 		29E66CDF2750B7CC00410B17 /* ControlButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E66CDE2750B7CC00410B17 /* ControlButtonBar.swift */; };
+		29E66CE12750D0DC00410B17 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E66CE02750D0DC00410B17 /* ControlView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		29E07DCB2750A358001B42EE /* ProductARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductARView.swift; sourceTree = "<group>"; };
 		29E66CDC2750B7B600410B17 /* ControlVisibilityToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlVisibilityToggleButton.swift; sourceTree = "<group>"; };
 		29E66CDE2750B7CC00410B17 /* ControlButtonBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButtonBar.swift; sourceTree = "<group>"; };
+		29E66CE02750D0DC00410B17 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +280,7 @@
 			isa = PBXGroup;
 			children = (
 				29E07DCB2750A358001B42EE /* ProductARView.swift */,
+				29E66CE02750D0DC00410B17 /* ControlView.swift */,
 				29E66CDC2750B7B600410B17 /* ControlVisibilityToggleButton.swift */,
 				29E66CDE2750B7CC00410B17 /* ControlButtonBar.swift */,
 			);
@@ -432,6 +435,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29E66CE12750D0DC00410B17 /* ControlView.swift in Sources */,
 				29E07D96274B7B9D001B42EE /* Persistence.swift in Sources */,
 				29E07D8F274B7B9A001B42EE /* ContentView.swift in Sources */,
 				29E07D99274B7B9D001B42EE /* simplify.xcdatamodeld in Sources */,

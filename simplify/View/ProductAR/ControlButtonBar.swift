@@ -16,7 +16,6 @@ struct ControlButtonBar: View {
                 //We need to chanege this icon
                 Image(systemName: "cube.fill")
                     .padding(15)
-                    .clipShape(Capsule())
                     .font(.system(.title))
                     .foregroundColor(.white)
             }
@@ -44,7 +43,6 @@ struct ControlButtonBar: View {
             } label: {
                 Image(systemName: "slider.horizontal.3")
                     .padding(15)
-                    .clipShape(Capsule())
                     .font(.system(.title))
                     .foregroundColor(.white)
             }
