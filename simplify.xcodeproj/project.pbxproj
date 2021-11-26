@@ -21,6 +21,8 @@
 		29E07DAD274B7B9E001B42EE /* simplifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E07DAC274B7B9E001B42EE /* simplifyUITests.swift */; };
 		29E07DAF274B7B9E001B42EE /* simplifyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E07DAE274B7B9E001B42EE /* simplifyUITestsLaunchTests.swift */; };
 		29E07DCC2750A358001B42EE /* ProductARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E07DCB2750A358001B42EE /* ProductARView.swift */; };
+		29E66CDD2750B7B600410B17 /* ControlVisibilityToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E66CDC2750B7B600410B17 /* ControlVisibilityToggleButton.swift */; };
+		29E66CDF2750B7CC00410B17 /* ControlButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E66CDE2750B7CC00410B17 /* ControlButtonBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		29E07DAC274B7B9E001B42EE /* simplifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simplifyUITests.swift; sourceTree = "<group>"; };
 		29E07DAE274B7B9E001B42EE /* simplifyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simplifyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		29E07DCB2750A358001B42EE /* ProductARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductARView.swift; sourceTree = "<group>"; };
+		29E66CDC2750B7B600410B17 /* ControlVisibilityToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlVisibilityToggleButton.swift; sourceTree = "<group>"; };
+		29E66CDE2750B7CC00410B17 /* ControlButtonBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButtonBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,7 +168,6 @@
 			children = (
 				29E07D8C274B7B9A001B42EE /* simplifyApp.swift */,
 				29E07D8E274B7B9A001B42EE /* ContentView.swift */,
-				29E07DCB2750A358001B42EE /* ProductARView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				29E07DCA274B8111001B42EE /* CartAR */,
 				29E07DC7274B7FF5001B42EE /* SignIn */,
 				29E07DC8274B8022001B42EE /* SignOut */,
+				29E66CD72750B5AE00410B17 /* PlacementAR */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -273,6 +277,9 @@
 		29E07DC9274B80FF001B42EE /* ProductAR */ = {
 			isa = PBXGroup;
 			children = (
+				29E07DCB2750A358001B42EE /* ProductARView.swift */,
+				29E66CDC2750B7B600410B17 /* ControlVisibilityToggleButton.swift */,
+				29E66CDE2750B7CC00410B17 /* ControlButtonBar.swift */,
 			);
 			path = ProductAR;
 			sourceTree = "<group>";
@@ -282,6 +289,13 @@
 			children = (
 			);
 			path = CartAR;
+			sourceTree = "<group>";
+		};
+		29E66CD72750B5AE00410B17 /* PlacementAR */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PlacementAR;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,6 +436,8 @@
 				29E07D8F274B7B9A001B42EE /* ContentView.swift in Sources */,
 				29E07D99274B7B9D001B42EE /* simplify.xcdatamodeld in Sources */,
 				29E07D8D274B7B9A001B42EE /* simplifyApp.swift in Sources */,
+				29E66CDD2750B7B600410B17 /* ControlVisibilityToggleButton.swift in Sources */,
+				29E66CDF2750B7CC00410B17 /* ControlButtonBar.swift in Sources */,
 				29E07DCC2750A358001B42EE /* ProductARView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

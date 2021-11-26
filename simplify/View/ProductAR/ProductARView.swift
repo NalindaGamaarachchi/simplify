@@ -10,7 +10,13 @@ import RealityKit
 
 struct ProductARView: View {
     var body: some View {
-        Text("")
+        VStack {
+            ControlVisibilityToggleButton()
+            
+            Spacer()
+            
+            ControlButtonBar()
+        }
     }
 }
 
