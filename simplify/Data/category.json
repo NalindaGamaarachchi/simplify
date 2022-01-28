@@ -1,0 +1,43 @@
+[
+    {
+        "id": 1,
+        "name": "Chair",
+        "image": "categoryChair"
+    },
+    {
+        "id": 2,
+        "name": "Table",
+        "image": "categoryTable"
+    },
+    {
+        "id": 3,
+        "name": "Sofa",
+        "image": "categorySofa"
+    },
+    {
+        "id": 4,
+        "name": "Bed",
+        "image": "categoryBed"
+    },
+    {
+        "id": 5,
+        "name": "Bedside Cupboard",
+        "image": "categoryBedsideCupboard"
+    },
+    {
+        "id": 6,
+        "name": "TV",
+        "image": "categoryTV"
+    },
+    {
+        "id": 7,
+        "name": "Frige",
+        "image": "categoryFrige"
+    },
+    {
+        "id": 8,
+        "name": "Decoration",
+        "image": "categoryDecoration"
+    }
+    
+]
