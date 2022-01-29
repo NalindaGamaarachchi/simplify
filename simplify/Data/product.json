@@ -1,0 +1,370 @@
+[
+    {
+        "id": 1,
+        "name": "Chair 1",
+        "category" : "Chair",
+        "image": "chair1",
+        "price": 2000,
+        "description": "Demo description"
+    },
+    {
+        "id": 2,
+        "name": "Chair 2",
+        "category" : "Chair",
+        "image": "chair2",
+        "price": 3000,
+        "description": "Demo description"
+    },
+    {
+        "id": 3,
+        "name": "Chair 3",
+        "category" : "Chair",
+        "image": "chair3",
+        "price": 4000,
+        "description": "Demo description"
+    },
+    {
+        "id": 4,
+        "name": "Chair 4",
+        "category" : "Chair",
+        "image": "chair4",
+        "price": 5000,
+        "description": "Demo description"
+    },
+    {
+        "id": 5,
+        "name": "Chair 5",
+        "category" : "Chair",
+        "image": "chair5",
+        "price": 5000,
+        "description": "Demo description"
+    },
+    {
+        "id": 6,
+        "name": "Chair 6",
+        "category" : "Chair",
+        "image": "chair6",
+        "price": 6000,
+        "description": "Demo description"
+    },
+    {
+        "id": 7,
+        "name": "Chair 7",
+        "category" : "Chair",
+        "image": "chair7",
+        "price": 7000,
+        "description": "Demo description"
+    },
+    {
+        "id": 8,
+        "name": "Chair 8",
+        "category" : "Chair",
+        "image": "chair8",
+        "price": 8000,
+        "description": "Demo description"
+    },
+    {
+        "id": 9,
+        "name": "Chair 9",
+        "category" : "Chair",
+        "image": "chair9",
+        "price": 9000,
+        "description": "Demo description"
+    },
+    {
+        "id": 10,
+        "name": "Chair 10",
+        "category" : "Chair",
+        "image": "chair10",
+        "price": 10000,
+        "description": "Demo description"
+    },
+    {
+        "id": 11,
+        "name": "Chair 11",
+        "category" : "Chair",
+        "image": "chair11",
+        "price": 10000,
+        "description": "Demo description"
+    },
+    {
+        "id": 12,
+        "name": "Chair 12",
+        "category" : "Chair",
+        "image": "chair12",
+        "price": 12000,
+        "description": "Demo description"
+    },
+        {
+        "id": 13,
+        "name": "Table 1",
+        "category" : "Table",
+        "image": "Table",
+        "price": 2000,
+        "description": "Demo description"
+    },
+    {
+        "id": 14,
+        "name": "Table 2",
+        "category" : "Table",
+        "image": "Table",
+        "price": 3000,
+        "description": "Demo description"
+    },
+    {
+        "id": 15,
+        "name": "Table 3",
+        "category" : "Table",
+        "image": "Table",
+        "price": 4000,
+        "description": "Demo description"
+    },
+    {
+        "id": 16,
+        "name": "Table 4",
+        "category" : "Table",
+        "image": "Table",
+        "price": 5000,
+        "description": "Demo description"
+    },
+    {
+        "id": 17,
+        "name": "Table 5",
+        "category" : "Table",
+        "image": "Table",
+        "price": 5000,
+        "description": "Demo description"
+    },
+    {
+        "id": 18,
+        "name": "Table 6",
+        "category" : "Table",
+        "image": "Table",
+        "price": 6000,
+        "description": "Demo description"
+    },
+    {
+        "id": 19,
+        "name": "Table 7",
+        "category" : "Table",
+        "image": "Table",
+        "price": 7000,
+        "description": "Demo description"
+    },
+    {
+        "id": 20,
+        "name": "Table 8",
+        "category" : "Table",
+        "image": "Table",
+        "price": 8000,
+        "description": "Demo description"
+    },
+    {
+        "id": 21,
+        "name": "Table 9",
+        "category" : "Table",
+        "image": "Table",
+        "price": 9000,
+        "description": "Demo description"
+    },
+    {
+        "id": 22,
+        "name": "Table 10",
+        "category" : "Table",
+        "image": "Table",
+        "price": 10000,
+        "description": "Demo description"
+    },
+    {
+        "id": 23,
+        "name": "Table 11",
+        "category" : "Table",
+        "image": "Table",
+        "price": 10000,
+        "description": "Demo description"
+    },
+    {
+        "id": 24,
+        "name": "Table 12",
+        "category" : "Table",
+        "image": "Table",
+        "price": 12000,
+        "description": "Demo description"
+    },
+        {
+        "id": 25,
+        "name": "Sofa 1",
+        "category" : "Sofa",
+        "image": "Sofa",
+        "price": 2000,
+        "description": "Demo description"
+    },
+    {
+        "id": 26,
+        "name": "Sofa 2",
+        "category" : "Sofa",
+        "image": "Sofa",
+        "price": 3000,
+        "description": "Demo description"
+    },
+    {
+        "id": 27,
+        "name": "Sofa 3",
+        "category" : "Sofa",
+        "image": "Sofa",
+        "price": 4000,
+        "description": "Demo description"
+    },
+    {
+        "id": 28,
+        "name": "Sofa 4",
+        "category" : "Sofa",
+        "image": "Sofa",
+        "price": 5000,
+        "description": "Demo description"
+    },
+    {
+        "id": 29,
+        "name": "Sofa 5",
+        "category" : "Sofa",
+        "image": "Sofa",
+        "price": 5000,
+        "description": "Demo description"
+    },
+    {
+        "id": 30,
+        "name": "Sofa 6",
+        "category" : "Sofa",
+        "image": "Sofa",
+        "price": 6000,
+        "description": "Demo description"
+    },
+    {
+        "id": 31,
+        "name": "Sofa 7",
+        "category" : "Sofa",
+        "image": "Sofa",
+        "price": 7000,
+        "description": "Demo description"
+    },
+    {
+        "id": 32,
+        "name": "Sofa 8",
+        "category" : "Sofa",
+        "image": "Sofa",
+        "price": 8000,
+        "description": "Demo description"
+    },
+    {
+        "id": 33,
+        "name": "Sofa 9",
+        "category" : "Sofa",
+        "image": "Sofa",
+        "price": 9000,
+        "description": "Demo description"
+    },
+    {
+        "id": 34,
+        "name": "Sofa 10",
+        "category" : "Sofa",
+        "image": "Sofa",
+        "price": 10000,
+        "description": "Demo description"
+    },
+    {
+        "id": 35,
+        "name": "Sofa 11",
+        "category" : "Sofa",
+        "image": "Sofa",
+        "price": 10000,
+        "description": "Demo description"
+    },
+    {
+        "id": 36,
+        "name": "Sofa 12",
+        "category" : "Sofa",
+        "image": "Sofa",
+        "price": 12000,
+        "description": "Demo description"
+    },
+    {
+        "id": 37,
+        "name": "Bed 1",
+        "category" : "Sofa",
+        "image": "Sofa",
+        "price": 12000,
+        "description": "Demo description"
+    },
+    {
+        "id": 38,
+        "name": "Bed 2",
+        "category" : "Sofa",
+        "image": "Sofa",
+        "price": 12000,
+        "description": "Demo description"
+    },
+    {
+        "id": 39,
+        "name": "Bedside Cupboard 1",
+        "category" : "Bedside Cupboard",
+        "image": "BedsideCupboard",
+        "price": 12000,
+        "description": "Demo description"
+    },
+    {
+        "id": 40,
+        "name": "Bedside Cupboard 2",
+        "category" : "Bedside Cupboard",
+        "image": "BedsideCupboard",
+        "price": 12000,
+        "description": "Demo description"
+    },
+    {
+        "id": 41,
+        "name": "TV 1",
+        "category" : "TV",
+        "image": "TV",
+        "price": 12000,
+        "description": "Demo description"
+    },
+    {
+        "id": 42,
+        "name": "TV 2",
+        "category" : "TV",
+        "image": "TV",
+        "price": 12000,
+        "description": "Demo description"
+    },
+    {
+        "id": 43,
+        "name": "Frige 1",
+        "category" : "Frige",
+        "image": "Frige",
+        "price": 12000,
+        "description": "Demo description"
+    },
+    {
+        "id": 44,
+        "name": "Frige 2",
+        "category" : "Frige",
+        "image": "Frige",
+        "price": 12000,
+        "description": "Demo description"
+    },
+    {
+        "id": 45,
+        "name": "Decoration 1",
+        "category" : "Decoration",
+        "image": "Decoration",
+        "price": 12000,
+        "description": "Demo description"
+    },
+    {
+        "id": 46,
+        "name": "Decoration 2",
+        "category" : "Decoration",
+        "image": "Decoration",
+        "price": 12000,
+        "description": "Demo description"
+    }
+]

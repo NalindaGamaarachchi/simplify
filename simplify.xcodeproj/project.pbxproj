@@ -17,6 +17,10 @@
 		298F04B927A3C16A00436E07 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298F04B827A3C16A00436E07 /* Constant.swift */; };
 		298F04BB27A3C1F800436E07 /* CategoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298F04BA27A3C1F800436E07 /* CategoryItemView.swift */; };
 		298F04BD27A3C52200436E07 /* CategoryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298F04BC27A3C52200436E07 /* CategoryGridView.swift */; };
+		298F04BF27A4F76D00436E07 /* product.json in Resources */ = {isa = PBXBuildFile; fileRef = 298F04BE27A4F76D00436E07 /* product.json */; };
+		298F04C127A4F7EB00436E07 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298F04C027A4F7EB00436E07 /* ProductModel.swift */; };
+		298F04C327A4F8A100436E07 /* ProductItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298F04C227A4F8A100436E07 /* ProductItemView.swift */; };
+		298F04C527A4F8B000436E07 /* ProductGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298F04C427A4F8B000436E07 /* ProductGridView.swift */; };
 		29E07D8D274B7B9A001B42EE /* simplifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E07D8C274B7B9A001B42EE /* simplifyApp.swift */; };
 		29E07D8F274B7B9A001B42EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E07D8E274B7B9A001B42EE /* ContentView.swift */; };
 		29E07D91274B7B9D001B42EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29E07D90274B7B9D001B42EE /* Assets.xcassets */; };
@@ -60,6 +64,10 @@
 		298F04B827A3C16A00436E07 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		298F04BA27A3C1F800436E07 /* CategoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemView.swift; sourceTree = "<group>"; };
 		298F04BC27A3C52200436E07 /* CategoryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryGridView.swift; sourceTree = "<group>"; };
+		298F04BE27A4F76D00436E07 /* product.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = product.json; sourceTree = "<group>"; };
+		298F04C027A4F7EB00436E07 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
+		298F04C227A4F8A100436E07 /* ProductItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemView.swift; sourceTree = "<group>"; };
+		298F04C427A4F8B000436E07 /* ProductGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductGridView.swift; sourceTree = "<group>"; };
 		29E07D89274B7B9A001B42EE /* simplify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simplify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E07D8C274B7B9A001B42EE /* simplifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simplifyApp.swift; sourceTree = "<group>"; };
 		29E07D8E274B7B9A001B42EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -224,6 +232,7 @@
 			isa = PBXGroup;
 			children = (
 				298F04B627A3C12500436E07 /* CategoryModel.swift */,
+				298F04C027A4F7EB00436E07 /* ProductModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -231,6 +240,7 @@
 		29E07DC0274B7E56001B42EE /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				298F04BE27A4F76D00436E07 /* product.json */,
 				298F04B427A3C0FD00436E07 /* category.json */,
 			);
 			path = Data;
@@ -255,6 +265,8 @@
 		29E07DC3274B7F1B001B42EE /* ProductsList */ = {
 			isa = PBXGroup;
 			children = (
+				298F04C227A4F8A100436E07 /* ProductItemView.swift */,
+				298F04C427A4F8B000436E07 /* ProductGridView.swift */,
 			);
 			path = ProductsList;
 			sourceTree = "<group>";
@@ -428,6 +440,7 @@
 				2908424F2750B1F700AFE53C /* flower_tulip.usdz in Resources */,
 				290842512750B1F700AFE53C /* fender_stratocaster.usdz in Resources */,
 				2908424E2750B1F700AFE53C /* gramophone.usdz in Resources */,
+				298F04BF27A4F76D00436E07 /* product.json in Resources */,
 				290842502750B1F700AFE53C /* chair_swan.usdz in Resources */,
 				29E07D91274B7B9D001B42EE /* Assets.xcassets in Resources */,
 			);
@@ -454,11 +467,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				298F04C327A4F8A100436E07 /* ProductItemView.swift in Sources */,
 				29E66CE12750D0DC00410B17 /* ControlView.swift in Sources */,
+				298F04C527A4F8B000436E07 /* ProductGridView.swift in Sources */,
 				29E07D96274B7B9D001B42EE /* Persistence.swift in Sources */,
 				29E07D8F274B7B9A001B42EE /* ContentView.swift in Sources */,
 				298F04B727A3C12500436E07 /* CategoryModel.swift in Sources */,
 				29E07D99274B7B9D001B42EE /* simplify.xcdatamodeld in Sources */,
+				298F04C127A4F7EB00436E07 /* ProductModel.swift in Sources */,
 				29E07D8D274B7B9A001B42EE /* simplifyApp.swift in Sources */,
 				29E66CDD2750B7B600410B17 /* ControlVisibilityToggleButton.swift in Sources */,
 				298F04BD27A3C52200436E07 /* CategoryGridView.swift in Sources */,
