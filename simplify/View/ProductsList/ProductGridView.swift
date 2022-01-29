@@ -8,11 +8,29 @@
 import SwiftUI
 
 struct ProductGridView: View {
+    @State private var showProductDetail = false
+    @State private var selectedProduct = products[0]
+    
     var body: some View {
-        ScrollView {
-            LazyVGrid(columns: gridLayout, spacing: rowSpacing) {
-                ForEach(products) { product in
-                    ProductItemView(product: product)
+        NavigationView {
+            ScrollView {
+                LazyVGrid(columns: gridLayout, spacing: rowSpacing) {
+                    ForEach(products) { product in
+                        Button {
+                            showProductDetail = true
+                            selectedProduct = product
+                        } label: {
+                            ProductItemView(product: product)
+                        }
+                    }
+                    .background(
+                        NavigationLink(isActive: $showProductDetail, destination: {
+                            ProductDetailView(product: selectedProduct)
+                        }, label: {
+                            EmptyView()
+                        })
+                    
+                    )
                 }
             }
         }

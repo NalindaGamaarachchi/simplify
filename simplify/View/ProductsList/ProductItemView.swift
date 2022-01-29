@@ -9,20 +9,17 @@ import SwiftUI
 
 struct ProductItemView: View {
     let product : Product
+    
     var body: some View {
-        Button {
-            //
-        } label: {
-            VStack(alignment: .center, spacing: 6) {
-                Image(systemName: "photo.circle")
-                    .frame(width: 50, height: 50, alignment: .center)
+        VStack(alignment: .center, spacing: 6) {
+            Image(systemName: "photo.circle")
+                .frame(width: 50, height: 50, alignment: .center)
                 
-                Text("LKR\(product.price)")
+            Text("LKR\(product.price)")
                 
-                Text(product.name) 
+            Text(product.name)
 
-                Text(product.description)
-            }
+            Text(product.description)
         }
         .padding()
     }

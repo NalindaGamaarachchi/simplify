@@ -11,16 +11,12 @@ struct CategoryItemView: View {
     let category: Category
     
     var body: some View {
-        Button {
-            //
-        } label: {
-            VStack(alignment: .center, spacing: 6) {
-                Image(systemName: "photo.circle")
-                    .frame(width: 50, height: 50, alignment: .center)
+        VStack(alignment: .center, spacing: 6) {
+            Image(systemName: "photo.circle")
+                .frame(width: 50, height: 50, alignment: .center)
                 
-                Text(category.name)
-                    .fontWeight(.light)
-            }
+            Text(category.name)
+                .fontWeight(.light)
         }
         .padding()
     }

@@ -21,6 +21,7 @@
 		298F04C127A4F7EB00436E07 /* ProductModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298F04C027A4F7EB00436E07 /* ProductModel.swift */; };
 		298F04C327A4F8A100436E07 /* ProductItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298F04C227A4F8A100436E07 /* ProductItemView.swift */; };
 		298F04C527A4F8B000436E07 /* ProductGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298F04C427A4F8B000436E07 /* ProductGridView.swift */; };
+		298F04C727A51AAB00436E07 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298F04C627A51AAB00436E07 /* ProductDetailView.swift */; };
 		29E07D8D274B7B9A001B42EE /* simplifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E07D8C274B7B9A001B42EE /* simplifyApp.swift */; };
 		29E07D8F274B7B9A001B42EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E07D8E274B7B9A001B42EE /* ContentView.swift */; };
 		29E07D91274B7B9D001B42EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29E07D90274B7B9D001B42EE /* Assets.xcassets */; };
@@ -68,6 +69,7 @@
 		298F04C027A4F7EB00436E07 /* ProductModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductModel.swift; sourceTree = "<group>"; };
 		298F04C227A4F8A100436E07 /* ProductItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemView.swift; sourceTree = "<group>"; };
 		298F04C427A4F8B000436E07 /* ProductGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductGridView.swift; sourceTree = "<group>"; };
+		298F04C627A51AAB00436E07 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		29E07D89274B7B9A001B42EE /* simplify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simplify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E07D8C274B7B9A001B42EE /* simplifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simplifyApp.swift; sourceTree = "<group>"; };
 		29E07D8E274B7B9A001B42EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 		29E07DC4274B7F29001B42EE /* ProductDetail */ = {
 			isa = PBXGroup;
 			children = (
+				298F04C627A51AAB00436E07 /* ProductDetailView.swift */,
 			);
 			path = ProductDetail;
 			sourceTree = "<group>";
@@ -470,6 +473,7 @@
 				298F04C327A4F8A100436E07 /* ProductItemView.swift in Sources */,
 				29E66CE12750D0DC00410B17 /* ControlView.swift in Sources */,
 				298F04C527A4F8B000436E07 /* ProductGridView.swift in Sources */,
+				298F04C727A51AAB00436E07 /* ProductDetailView.swift in Sources */,
 				29E07D96274B7B9D001B42EE /* Persistence.swift in Sources */,
 				29E07D8F274B7B9A001B42EE /* ContentView.swift in Sources */,
 				298F04B727A3C12500436E07 /* CategoryModel.swift in Sources */,

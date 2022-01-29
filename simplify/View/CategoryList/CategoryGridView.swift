@@ -12,7 +12,11 @@ struct CategoryGridView: View {
         ScrollView {
             LazyVGrid(columns: gridLayout, spacing: rowSpacing) {
                 ForEach(categories) { category in
-                    CategoryItemView(category: category)
+                    Button {
+                        //
+                    } label: {
+                        CategoryItemView(category: category)
+                    }
                 }
             }
         }
