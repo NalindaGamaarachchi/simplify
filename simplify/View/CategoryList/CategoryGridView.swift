@@ -8,15 +8,29 @@
 import SwiftUI
 
 struct CategoryGridView: View {
+    @State private var showProductGrid = false
+    @State private var selectedCategory = categories[0]
+    
     var body: some View {
-        ScrollView {
-            LazyVGrid(columns: gridLayout, spacing: rowSpacing) {
-                ForEach(categories) { category in
-                    Button {
-                        //
-                    } label: {
-                        CategoryItemView(category: category)
+        NavigationView {
+            ScrollView {
+                LazyVGrid(columns: gridLayout, spacing: rowSpacing) {
+                    ForEach(categories) { category in
+                        Button {
+                            showProductGrid = true
+                            selectedCategory = category
+                        } label: {
+                            CategoryItemView(category: category)
+                        }
                     }
+                    .background(
+                        NavigationLink(isActive: $showProductGrid, destination: {
+                            ProductGridView(category: selectedCategory)
+                        }, label: {
+                            EmptyView()
+                        })
+                    
+                    )
                 }
             }
         }
