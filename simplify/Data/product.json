@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Chair 1",
         "category" : "Chair",
-        "image": "chair1",
+        "image": "chair_swan",
         "price": 2000,
         "description": "Demo description"
     },

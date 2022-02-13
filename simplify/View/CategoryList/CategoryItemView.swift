@@ -15,7 +15,7 @@ struct CategoryItemView: View {
             Image(systemName: "photo.circle")
                 .frame(width: 50, height: 50, alignment: .center)
                 
-            Text(category.name)
+            Text(category.label)
                 .fontWeight(.light)
         }
         .padding()
@@ -24,7 +24,7 @@ struct CategoryItemView: View {
 
 struct CategoryItemView_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryItemView(category: categories[4])
+        CategoryItemView(category: Category.chair)
             .previewLayout(.sizeThatFits)
             .padding()
     }

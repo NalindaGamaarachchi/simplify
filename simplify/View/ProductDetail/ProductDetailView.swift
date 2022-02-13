@@ -8,14 +8,23 @@
 import SwiftUI
 
 struct ProductDetailView: View {
-    @State var product: Product
+    @State var product : Product
     var body: some View {
-        Text(product.name)
+        //This view is just for test we need to create view for each one;
+        VStack {
+            Button {
+                //
+            } label: {
+                Text("AR View")
+            }
+            Image(product.image)
+            Text(product.name)
+        }
     }
 }
 
 struct ProductDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductDetailView(product: products[0])
+        ProductDetailView(product: Product(id: 01, name: "Chair 01", category: .chair, image: "chair_swan", price: 1000, description: "", scale: 1))
     }
 }

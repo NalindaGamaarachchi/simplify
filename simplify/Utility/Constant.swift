@@ -9,8 +9,10 @@ import Foundation
 import SwiftUI
 
 //DATA
-let categories: [Category] = Bundle.main.decode("category.json")
-let products: [Product] = Bundle.main.decode("product.json")
+//let categories: [Category] = Bundle.main.decode("category.json")
+//let products: [Product] = Bundle.main.decode("product.json")
+
+
 
 //LAYOUT
 let columSpacing: CGFloat = 20
