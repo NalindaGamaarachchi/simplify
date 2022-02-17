@@ -13,7 +13,7 @@ struct ProductDetailView: View {
         //This view is just for test we need to create view for each one;
         VStack {
             Button {
-                //
+                product.loadModelEntity()
             } label: {
                 Text("AR View")
             }
