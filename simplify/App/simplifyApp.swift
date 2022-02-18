@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct simplifyApp: App {
+    @StateObject var placementSettings = PlacementSettings()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(placementSettings)
         }
     }
 }

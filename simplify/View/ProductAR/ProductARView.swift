@@ -9,6 +9,7 @@ import SwiftUI
 import RealityKit
 
 struct ProductARView: View {
+    @EnvironmentObject var placementSettings: PlacementSettings
     @State private var isConcrolsVisibles: Bool = true
     
     var body: some View {
@@ -16,7 +17,12 @@ struct ProductARView: View {
             
             ARViewContainer()
             
-            ControlView(isConcrolsVisibles: $isConcrolsVisibles)
+            if self.placementSettings.selectedProduct == nil {
+                ControlView(isConcrolsVisibles: $isConcrolsVisibles)
+            }else {
+                PlacementARView()
+            }
+            
         }
     }
 }
@@ -26,5 +32,6 @@ struct ProductARView_Previews: PreviewProvider {
         ProductARView()
             .background(Color.black.opacity(0.3))
             .edgesIgnoringSafeArea(.all)
+            .environmentObject(PlacementSettings())
     }
 }
