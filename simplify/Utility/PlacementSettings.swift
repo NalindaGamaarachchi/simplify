@@ -26,4 +26,5 @@ class PlacementSettings: ObservableObject {
             print("DEBUG: Setting confirmed product to \(product.name)")
         }
     }
+    var sceneObserver: Cancellable?
 }
