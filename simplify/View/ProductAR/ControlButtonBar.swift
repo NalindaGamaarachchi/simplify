@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct ControlButtonBar: View {
+    @EnvironmentObject var placementSettings: PlacementSettings
     var body: some View {
         HStack {
             Button {
-                print("DEBUG: Similer Products button pressed")
+                print("DEBUG: recently Products button pressed")
             } label: {
                 //We need to chanege this icon
                 Image(systemName: "cube.fill")
@@ -24,6 +25,13 @@ struct ControlButtonBar: View {
             
             Button {
                 print("DEBUG: Add to cart button pressed")
+                if let placeProductAR = placementSettings.placedProduct{
+                    self.placementSettings.productInCart.append(placeProductAR)
+                    print("product added to cart")
+                    // after added product to change button
+                }
+                
+                
             } label: {
                 HStack {
                     Text("Add to Cart")
@@ -39,7 +47,7 @@ struct ControlButtonBar: View {
             Spacer()
             
             Button {
-                print("DEBUG: Change color pressed")
+                print("DEBUG: Similer Products button pressed")
             } label: {
                 Image(systemName: "slider.horizontal.3")
                     .padding(15)

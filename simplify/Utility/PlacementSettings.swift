@@ -24,7 +24,12 @@ class PlacementSettings: ObservableObject {
                 return
             }
             print("DEBUG: Setting confirmed product to \(product.name)")
+            self.placedProduct = product
         }
     }
     var sceneObserver: Cancellable?
+    
+    @Published var placedProduct: Product?
+    
+    @Published var productInCart: [Product] = []
 }
