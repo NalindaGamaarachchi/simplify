@@ -12,6 +12,12 @@
 		290842502750B1F700AFE53C /* chair_swan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2908424C2750B1F700AFE53C /* chair_swan.usdz */; };
 		290842512750B1F700AFE53C /* fender_stratocaster.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2908424D2750B1F700AFE53C /* fender_stratocaster.usdz */; };
 		290C894827C34C3B00DCAFFB /* CartARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290C894727C34C3B00DCAFFB /* CartARView.swift */; };
+		290C894A27C519C700DCAFFB /* CartGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290C894927C519C700DCAFFB /* CartGridView.swift */; };
+		290C894C27C519DD00DCAFFB /* CartItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290C894B27C519DD00DCAFFB /* CartItemView.swift */; };
+		290C894E27C5281900DCAFFB /* CartControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290C894D27C5281900DCAFFB /* CartControlView.swift */; };
+		290C895027C5285800DCAFFB /* CartControlButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290C894F27C5285800DCAFFB /* CartControlButtonBar.swift */; };
+		290C895227C5286B00DCAFFB /* CartControlVisibilityToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290C895127C5286B00DCAFFB /* CartControlVisibilityToggleButton.swift */; };
+		290C895427C63CA600DCAFFB /* CartListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290C895327C63CA600DCAFFB /* CartListView.swift */; };
 		296114F927B78C0D00104141 /* testModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296114F827B78C0D00104141 /* testModel.swift */; };
 		296E010227BF59900066FB2A /* PlacementSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296E010127BF59900066FB2A /* PlacementSettings.swift */; };
 		296E010427BF5C8A0066FB2A /* PlacementARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296E010327BF5C8A0066FB2A /* PlacementARView.swift */; };
@@ -66,6 +72,12 @@
 		2908424C2750B1F700AFE53C /* chair_swan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair_swan.usdz; sourceTree = "<group>"; };
 		2908424D2750B1F700AFE53C /* fender_stratocaster.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = fender_stratocaster.usdz; sourceTree = "<group>"; };
 		290C894727C34C3B00DCAFFB /* CartARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartARView.swift; sourceTree = "<group>"; };
+		290C894927C519C700DCAFFB /* CartGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartGridView.swift; sourceTree = "<group>"; };
+		290C894B27C519DD00DCAFFB /* CartItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItemView.swift; sourceTree = "<group>"; };
+		290C894D27C5281900DCAFFB /* CartControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartControlView.swift; sourceTree = "<group>"; };
+		290C894F27C5285800DCAFFB /* CartControlButtonBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartControlButtonBar.swift; sourceTree = "<group>"; };
+		290C895127C5286B00DCAFFB /* CartControlVisibilityToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartControlVisibilityToggleButton.swift; sourceTree = "<group>"; };
+		290C895327C63CA600DCAFFB /* CartListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartListView.swift; sourceTree = "<group>"; };
 		296114F827B78C0D00104141 /* testModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testModel.swift; sourceTree = "<group>"; };
 		296E010127BF59900066FB2A /* PlacementSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementSettings.swift; sourceTree = "<group>"; };
 		296E010327BF5C8A0066FB2A /* PlacementARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacementARView.swift; sourceTree = "<group>"; };
@@ -299,6 +311,8 @@
 		29E07DC5274B7F88001B42EE /* Cart */ = {
 			isa = PBXGroup;
 			children = (
+				290C894927C519C700DCAFFB /* CartGridView.swift */,
+				290C894B27C519DD00DCAFFB /* CartItemView.swift */,
 			);
 			path = Cart;
 			sourceTree = "<group>";
@@ -339,6 +353,10 @@
 			isa = PBXGroup;
 			children = (
 				290C894727C34C3B00DCAFFB /* CartARView.swift */,
+				290C894D27C5281900DCAFFB /* CartControlView.swift */,
+				290C894F27C5285800DCAFFB /* CartControlButtonBar.swift */,
+				290C895127C5286B00DCAFFB /* CartControlVisibilityToggleButton.swift */,
+				290C895327C63CA600DCAFFB /* CartListView.swift */,
 			);
 			path = CartAR;
 			sourceTree = "<group>";
@@ -498,18 +516,24 @@
 				29E66CE12750D0DC00410B17 /* ControlView.swift in Sources */,
 				298F04C527A4F8B000436E07 /* ProductGridView.swift in Sources */,
 				298F04C727A51AAB00436E07 /* ProductDetailView.swift in Sources */,
+				290C895227C5286B00DCAFFB /* CartControlVisibilityToggleButton.swift in Sources */,
 				29E07D96274B7B9D001B42EE /* Persistence.swift in Sources */,
 				29E07D8F274B7B9A001B42EE /* ContentView.swift in Sources */,
+				290C894E27C5281900DCAFFB /* CartControlView.swift in Sources */,
 				290C894827C34C3B00DCAFFB /* CartARView.swift in Sources */,
+				290C895027C5285800DCAFFB /* CartControlButtonBar.swift in Sources */,
 				296E010427BF5C8A0066FB2A /* PlacementARView.swift in Sources */,
+				290C894C27C519DD00DCAFFB /* CartItemView.swift in Sources */,
 				298F04B727A3C12500436E07 /* CategoryModel.swift in Sources */,
 				29E07D99274B7B9D001B42EE /* simplify.xcdatamodeld in Sources */,
 				298F04C127A4F7EB00436E07 /* ProductModel.swift in Sources */,
 				29E07D8D274B7B9A001B42EE /* simplifyApp.swift in Sources */,
+				290C894A27C519C700DCAFFB /* CartGridView.swift in Sources */,
 				29E66CDD2750B7B600410B17 /* ControlVisibilityToggleButton.swift in Sources */,
 				298F04BD27A3C52200436E07 /* CategoryGridView.swift in Sources */,
 				29E66CDF2750B7CC00410B17 /* ControlButtonBar.swift in Sources */,
 				298F04B927A3C16A00436E07 /* Constant.swift in Sources */,
+				290C895427C63CA600DCAFFB /* CartListView.swift in Sources */,
 				298F04BB27A3C1F800436E07 /* CategoryItemView.swift in Sources */,
 				29E07DCC2750A358001B42EE /* ProductARView.swift in Sources */,
 				298F04B327A3BC2300436E07 /* CodableBundle.swift in Sources */,

@@ -21,4 +21,6 @@ var gridLayout: [GridItem] {
     return Array(repeating: GridItem(.flexible(), spacing: columSpacing), count: 2)
 } 
 
-
+var cartGridLayout: [GridItem] {
+    return Array(repeating: GridItem(.flexible(), spacing: columSpacing), count: 1)
+}

@@ -14,6 +14,14 @@ struct CategoryGridView: View {
     var body: some View {
         NavigationView {
             ScrollView {
+                    NavigationLink {
+                        CartARView()
+                    } label: {
+                        Text("cart")
+                    }
+
+                
+
                 LazyVGrid(columns: gridLayout, spacing: rowSpacing) {
                     ForEach(Category.allCases) { category in
                         Button {

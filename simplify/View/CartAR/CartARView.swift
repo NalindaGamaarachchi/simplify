@@ -8,9 +8,21 @@
 import SwiftUI
 
 struct CartARView: View {
+    @EnvironmentObject var placementSettings: PlacementSettings
+    @State private var isConcrolsVisiblesCart: Bool = true
+    @State private var showCartList: Bool = false
+    
     var body: some View {
-        ZStack {
-            Text("")
+        
+        ZStack(alignment: .bottom) {
+            
+            ARViewContainer()
+            
+            if self.placementSettings.selectedProduct == nil {
+                CartControlView(isConcrolsVisiblesCart: $isConcrolsVisiblesCart, showCartList: $showCartList)
+            }else {
+                PlacementARView()
+            }
         }
     }
 }

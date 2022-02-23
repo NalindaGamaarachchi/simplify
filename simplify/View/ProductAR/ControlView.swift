@@ -25,7 +25,7 @@ struct ControlView: View {
 
 //struct ControlView_Previews: PreviewProvider {
 //    static var previews: some View {
-//        ControlView()
+//        ControlView(isConcrolsVisibles: true)
 //            .background(Color.black.opacity(0.3))
 //            .edgesIgnoringSafeArea(.all)
 //    }
