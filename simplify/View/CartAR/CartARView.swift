@@ -16,7 +16,7 @@ struct CartARView: View {
         
         ZStack(alignment: .bottom) {
             
-            ARViewContainer()
+//            ARViewContainer()
             
             if self.placementSettings.selectedProduct == nil {
                 CartControlView(isConcrolsVisiblesCart: $isConcrolsVisiblesCart, showCartList: $showCartList)

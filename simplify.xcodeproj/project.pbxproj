@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2907322C27C7A841004956C4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2907322B27C7A841004956C4 /* HomeView.swift */; };
+		2907322E27C7A858004956C4 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2907322D27C7A858004956C4 /* TabBar.swift */; };
+		2907323127C7A92D004956C4 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2907323027C7A92D004956C4 /* SearchView.swift */; };
 		2908424E2750B1F700AFE53C /* gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2908424A2750B1F600AFE53C /* gramophone.usdz */; };
 		2908424F2750B1F700AFE53C /* flower_tulip.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2908424B2750B1F600AFE53C /* flower_tulip.usdz */; };
 		290842502750B1F700AFE53C /* chair_swan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 2908424C2750B1F700AFE53C /* chair_swan.usdz */; };
@@ -67,6 +70,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2907322B27C7A841004956C4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		2907322D27C7A858004956C4 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		2907323027C7A92D004956C4 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		2908424A2750B1F600AFE53C /* gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = gramophone.usdz; sourceTree = "<group>"; };
 		2908424B2750B1F600AFE53C /* flower_tulip.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = flower_tulip.usdz; sourceTree = "<group>"; };
 		2908424C2750B1F700AFE53C /* chair_swan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair_swan.usdz; sourceTree = "<group>"; };
@@ -137,6 +143,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2907322F27C7A91A004956C4 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				2907323027C7A92D004956C4 /* SearchView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		290842492750B1C700AFE53C /* Sample 3D Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -223,6 +237,7 @@
 		29E07DBC274B7E1C001B42EE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2907322F27C7A91A004956C4 /* Search */,
 				29E07DC1274B7EB0001B42EE /* Home */,
 				29E07DC2274B7ED1001B42EE /* CategoryList */,
 				29E07DC3274B7F1B001B42EE /* ProductsList */,
@@ -278,6 +293,8 @@
 		29E07DC1274B7EB0001B42EE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				2907322B27C7A841004956C4 /* HomeView.swift */,
+				2907322D27C7A858004956C4 /* TabBar.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -520,10 +537,13 @@
 				29E07D96274B7B9D001B42EE /* Persistence.swift in Sources */,
 				29E07D8F274B7B9A001B42EE /* ContentView.swift in Sources */,
 				290C894E27C5281900DCAFFB /* CartControlView.swift in Sources */,
+				2907322E27C7A858004956C4 /* TabBar.swift in Sources */,
 				290C894827C34C3B00DCAFFB /* CartARView.swift in Sources */,
 				290C895027C5285800DCAFFB /* CartControlButtonBar.swift in Sources */,
 				296E010427BF5C8A0066FB2A /* PlacementARView.swift in Sources */,
+				2907322C27C7A841004956C4 /* HomeView.swift in Sources */,
 				290C894C27C519DD00DCAFFB /* CartItemView.swift in Sources */,
+				2907323127C7A92D004956C4 /* SearchView.swift in Sources */,
 				298F04B727A3C12500436E07 /* CategoryModel.swift in Sources */,
 				29E07D99274B7B9D001B42EE /* simplify.xcdatamodeld in Sources */,
 				298F04C127A4F7EB00436E07 /* ProductModel.swift in Sources */,

@@ -15,7 +15,7 @@ struct ProductARView: View {
     var body: some View {
         ZStack(alignment: .bottom) {
             
-            ARViewContainer()
+//            ARViewContainer()
             
             if self.placementSettings.selectedProduct == nil {
                 ControlView(isConcrolsVisibles: $isConcrolsVisibles)
