@@ -15,8 +15,9 @@ struct ProductGridView: View {
     
     var body: some View {
         let productByCategory = testModel.get(category: category)
+        // way to fix this 
         NavigationView {
-            ScrollView (){
+            ScrollView (.vertical){
                 LazyVGrid(columns: gridLayout, spacing: rowSpacing) {
                     ForEach(0..<productByCategory.count) { index in
                         let product = productByCategory[index]
@@ -24,7 +25,6 @@ struct ProductGridView: View {
                             showProductDetail = true
                             selectedProduct = product
                         } label: {
-                            
                         ProductItemView(product: product)
                         }
                     }
@@ -43,10 +43,10 @@ struct ProductGridView: View {
     }
 }
 
-//struct ProductGridView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ProductGridView(category: Category.chair)
-//            .previewLayout(.sizeThatFits) 
-//            .padding()
-//    }
-//}
+struct ProductGridView_Previews: PreviewProvider {
+    static var previews: some View {
+        ProductGridView(category: Category.chair)
+            .previewLayout(.sizeThatFits)
+            .padding()
+    }
+}

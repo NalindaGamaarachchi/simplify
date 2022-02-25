@@ -13,6 +13,7 @@ struct ProductDetailView: View {
     @State var showProductAR = false
     var body: some View {
         //This view is just for test we need to create view for each one;
+        // Add button for rate the product https://www.youtube.com/watch?v=t1E1on5F6po 
         VStack {
             Button {
                 product.loadModelEntity()
