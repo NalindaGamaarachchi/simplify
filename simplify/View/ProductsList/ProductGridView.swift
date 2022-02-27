@@ -12,10 +12,12 @@ struct ProductGridView: View {
     @State var showProductDetail = false
     @State var selectedProduct: Product = Product(id: 01, name: "Chair 01", category: .chair, image: "chair_swan", price: 1000, description: "", scale: 1)
     let testModel = TestModels()
+//    var animation: Namespace.ID
     
     var body: some View {
         let productByCategory = testModel.get(category: category)
-        // way to fix this 
+        // way to fix this
+        // 6.06 min
         NavigationView {
             ScrollView (.vertical){
                 LazyVGrid(columns: gridLayout, spacing: rowSpacing) {
@@ -34,12 +36,14 @@ struct ProductGridView: View {
                         }, label: {
                             EmptyView()
                         })
-                    
+
                     )
                 }
             }
         }
         .navigationTitle(category.label)
+        
+
     }
 }
 

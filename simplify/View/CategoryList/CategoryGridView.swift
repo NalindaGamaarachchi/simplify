@@ -11,6 +11,7 @@ struct CategoryGridView: View {
     @State  var showProductGrid = false
     @State  var selectedCategory = Category.sofa
     
+    
     var body: some View {
         NavigationView {
             ScrollView {
