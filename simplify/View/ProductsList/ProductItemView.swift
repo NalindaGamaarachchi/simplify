@@ -9,14 +9,16 @@ import SwiftUI
 
 struct ProductItemView: View {
     let product : Product
+//    var animation: Namespace.ID
     
     var body: some View {
 
-        VStack(alignment: .leading, spacing: 6) {
+        VStack(alignment: .center) {
                 Image(product.image)
                     .resizable()
-                    .frame(width: 250, height: 250)
+                    .aspectRatio(contentMode: .fit)
                     .cornerRadius(20.0)
+                    .padding()
                     
                 Text(product.name)
                     .font(.title2)
@@ -24,28 +26,32 @@ struct ProductItemView: View {
                     .multilineTextAlignment(.leading)
                     
                 Text(product.description)
-                    .font(.body)
-                    .fontWeight(.ultraLight)
+                .font(.caption)
+                .foregroundColor(.gray)
+                    .lineLimit(2)
+                    .truncationMode(.tail)
             
                 HStack {
                     //create a binding var called rating (INT) and pass in to for each loop
-                    ForEach(0..<5) { star in
-                        Image(systemName: "star.fill")
-                            .foregroundColor(Color.yellow)
-                            .frame(width: 10, height: 10)
-                            .padding(2)
-                    }
-                    Spacer()
+//                    ForEach(0..<5) { star in
+//                        Image(systemName: "star.fill")
+//                            .foregroundColor(Color.yellow)
+//                            .frame(width: 10, height: 10)
+//                            .padding(2)
+//                    }
+                    
                     
                     Text("LKR \(Int(product.price))")
                         .font(.title2)
                         .fontWeight(.bold)
                 }
+            
                 
             }
-            .frame(width: 250, height: 400)
             .padding()
             .background(Color.white)
+            .cornerRadius(15)
+            .frame(width: 250, height: 250)
     }
 }
 
