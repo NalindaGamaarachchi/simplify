@@ -47,6 +47,12 @@
 		29E07DAD274B7B9E001B42EE /* simplifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E07DAC274B7B9E001B42EE /* simplifyUITests.swift */; };
 		29E07DAF274B7B9E001B42EE /* simplifyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E07DAE274B7B9E001B42EE /* simplifyUITestsLaunchTests.swift */; };
 		29E07DCC2750A358001B42EE /* ProductARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E07DCB2750A358001B42EE /* ProductARView.swift */; };
+		29E0CF5C27F94E93002CDF30 /* OnBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E0CF5B27F94E93002CDF30 /* OnBoardView.swift */; };
+		29E0CF5E27F94EDA002CDF30 /* LogInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E0CF5D27F94EDA002CDF30 /* LogInModel.swift */; };
+		29E0CF6127F94F04002CDF30 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E0CF6027F94F04002CDF30 /* LogInView.swift */; };
+		29E0CF6327F94F91002CDF30 /* CustomCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E0CF6227F94F91002CDF30 /* CustomCorners.swift */; };
+		29E0CF6527F953D8002CDF30 /* LoginTop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E0CF6427F953D8002CDF30 /* LoginTop.swift */; };
+		29E0CF6727F9552B002CDF30 /* LoginTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E0CF6627F9552B002CDF30 /* LoginTextField.swift */; };
 		29E66CDD2750B7B600410B17 /* ControlVisibilityToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E66CDC2750B7B600410B17 /* ControlVisibilityToggleButton.swift */; };
 		29E66CDF2750B7CC00410B17 /* ControlButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E66CDE2750B7CC00410B17 /* ControlButtonBar.swift */; };
 		29E66CE12750D0DC00410B17 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E66CE02750D0DC00410B17 /* ControlView.swift */; };
@@ -112,6 +118,12 @@
 		29E07DAC274B7B9E001B42EE /* simplifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simplifyUITests.swift; sourceTree = "<group>"; };
 		29E07DAE274B7B9E001B42EE /* simplifyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simplifyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		29E07DCB2750A358001B42EE /* ProductARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductARView.swift; sourceTree = "<group>"; };
+		29E0CF5B27F94E93002CDF30 /* OnBoardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardView.swift; sourceTree = "<group>"; };
+		29E0CF5D27F94EDA002CDF30 /* LogInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInModel.swift; sourceTree = "<group>"; };
+		29E0CF6027F94F04002CDF30 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		29E0CF6227F94F91002CDF30 /* CustomCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorners.swift; sourceTree = "<group>"; };
+		29E0CF6427F953D8002CDF30 /* LoginTop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTop.swift; sourceTree = "<group>"; };
+		29E0CF6627F9552B002CDF30 /* LoginTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTextField.swift; sourceTree = "<group>"; };
 		29E66CDC2750B7B600410B17 /* ControlVisibilityToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlVisibilityToggleButton.swift; sourceTree = "<group>"; };
 		29E66CDE2750B7CC00410B17 /* ControlButtonBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButtonBar.swift; sourceTree = "<group>"; };
 		29E66CE02750D0DC00410B17 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
@@ -237,6 +249,8 @@
 		29E07DBC274B7E1C001B42EE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				29E0CF5F27F94EEC002CDF30 /* LogIn */,
+				29E0CF5A27F94E82002CDF30 /* OnBoard */,
 				2907322F27C7A91A004956C4 /* Search */,
 				29E07DC1274B7EB0001B42EE /* Home */,
 				29E07DC2274B7ED1001B42EE /* CategoryList */,
@@ -259,6 +273,7 @@
 				298F04B827A3C16A00436E07 /* Constant.swift */,
 				296E010127BF59900066FB2A /* PlacementSettings.swift */,
 				296E010827C0A2700066FB2A /* CustomARView.swift */,
+				29E0CF6227F94F91002CDF30 /* CustomCorners.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -277,6 +292,7 @@
 				298F04B627A3C12500436E07 /* CategoryModel.swift */,
 				298F04C027A4F7EB00436E07 /* ProductModel.swift */,
 				296114F827B78C0D00104141 /* testModel.swift */,
+				29E0CF5D27F94EDA002CDF30 /* LogInModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -376,6 +392,24 @@
 				290C895327C63CA600DCAFFB /* CartListView.swift */,
 			);
 			path = CartAR;
+			sourceTree = "<group>";
+		};
+		29E0CF5A27F94E82002CDF30 /* OnBoard */ = {
+			isa = PBXGroup;
+			children = (
+				29E0CF5B27F94E93002CDF30 /* OnBoardView.swift */,
+			);
+			path = OnBoard;
+			sourceTree = "<group>";
+		};
+		29E0CF5F27F94EEC002CDF30 /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				29E0CF6027F94F04002CDF30 /* LogInView.swift */,
+				29E0CF6427F953D8002CDF30 /* LoginTop.swift */,
+				29E0CF6627F9552B002CDF30 /* LoginTextField.swift */,
+			);
+			path = LogIn;
 			sourceTree = "<group>";
 		};
 		29E66CD72750B5AE00410B17 /* PlacementAR */ = {
@@ -538,17 +572,23 @@
 				29E07D8F274B7B9A001B42EE /* ContentView.swift in Sources */,
 				290C894E27C5281900DCAFFB /* CartControlView.swift in Sources */,
 				2907322E27C7A858004956C4 /* TabBar.swift in Sources */,
+				29E0CF6727F9552B002CDF30 /* LoginTextField.swift in Sources */,
 				290C894827C34C3B00DCAFFB /* CartARView.swift in Sources */,
 				290C895027C5285800DCAFFB /* CartControlButtonBar.swift in Sources */,
+				29E0CF5C27F94E93002CDF30 /* OnBoardView.swift in Sources */,
 				296E010427BF5C8A0066FB2A /* PlacementARView.swift in Sources */,
 				2907322C27C7A841004956C4 /* HomeView.swift in Sources */,
+				29E0CF5E27F94EDA002CDF30 /* LogInModel.swift in Sources */,
 				290C894C27C519DD00DCAFFB /* CartItemView.swift in Sources */,
 				2907323127C7A92D004956C4 /* SearchView.swift in Sources */,
+				29E0CF6127F94F04002CDF30 /* LogInView.swift in Sources */,
+				29E0CF6327F94F91002CDF30 /* CustomCorners.swift in Sources */,
 				298F04B727A3C12500436E07 /* CategoryModel.swift in Sources */,
 				29E07D99274B7B9D001B42EE /* simplify.xcdatamodeld in Sources */,
 				298F04C127A4F7EB00436E07 /* ProductModel.swift in Sources */,
 				29E07D8D274B7B9A001B42EE /* simplifyApp.swift in Sources */,
 				290C894A27C519C700DCAFFB /* CartGridView.swift in Sources */,
+				29E0CF6527F953D8002CDF30 /* LoginTop.swift in Sources */,
 				29E66CDD2750B7B600410B17 /* ControlVisibilityToggleButton.swift in Sources */,
 				298F04BD27A3C52200436E07 /* CategoryGridView.swift in Sources */,
 				29E66CDF2750B7CC00410B17 /* ControlButtonBar.swift in Sources */,

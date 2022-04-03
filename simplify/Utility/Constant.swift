@@ -24,3 +24,13 @@ var gridLayout: [GridItem] {
 var cartGridLayout: [GridItem] {
     return Array(repeating: GridItem(.flexible(), spacing: columSpacing), count: 1)
 }
+
+//COLOR
+let primaryColor: Color = Color("Primary")
+let backgroundColor: Color = Color("Bg")
+
+let colorBrown1: Color = Color("colorBrown1")
+let colorBrown2: Color = Color("colorBrown2")
+let colorBrown3: Color = Color("colorBrown3")
+let colorBrown4: Color = Color("colorBrown4")
+
