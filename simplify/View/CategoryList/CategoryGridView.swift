@@ -14,34 +14,37 @@ struct CategoryGridView: View {
     
     var body: some View {
         NavigationView {
-            ScrollView {
-                    NavigationLink {
-                        CartARView()
-                    } label: {
-                        Text("cart")
-                    }
-
-                
-
-                LazyVGrid(columns: gridLayout, spacing: rowSpacing) {
-                    ForEach(Category.allCases) { category in
-                        Button {
-                            showProductGrid = true
-                            selectedCategory = category
-                        } label: {
-                            CategoryItemView(category: category)
-                        }
-                    }
-                    .background(
-                        NavigationLink(isActive: $showProductGrid, destination: {
-                            ProductGridView(category: selectedCategory)
-                        }, label: {
-                            EmptyView()
-                        })
+            ScrollView {                                                                                                      
+                VStack {
                     
-                    )
+                    //
+                    Text("Select your\nCategory")
+                        .font(.system(size: 50).bold())
+                        .foregroundColor(.black)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding()
+                        
+                    Divider()
+                    
+                    LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 20), count: 2), spacing: 25) {
+                        ForEach(Category.allCases) { category in
+                            CategoryItemView(category: category)
+                                .onTapGesture {
+                                    withAnimation (.spring()) {
+                                        selectedCategory = category
+                                        showProductGrid.toggle()
+                                    }
+                                }
+                        }
+                        
+                        
+                    }
+                    NavigationLink(destination: ProductGridView(category: selectedCategory), isActive: $showProductGrid) {EmptyView()}
                 }
+                .navigationBarHidden(true)
             }
+            
+
         }
     }
 }

@@ -30,6 +30,11 @@ struct TabBar: View {
                     Label("home", systemImage: "house")
                     //add custom cart lable
                 }
+            ProfileView()
+                .tabItem {
+                    Label("home", systemImage: "house")
+                    //add custom cart lable
+                }
         }
     }
 }

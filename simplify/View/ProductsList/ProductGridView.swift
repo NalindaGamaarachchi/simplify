@@ -18,7 +18,6 @@ struct ProductGridView: View {
         let productByCategory = testModel.get(category: category)
         // way to fix this
         // 6.06 min
-        NavigationView {
             ScrollView (.vertical){
                 LazyVGrid(columns: gridLayout, spacing: rowSpacing) {
                     ForEach(0..<productByCategory.count) { index in
@@ -30,20 +29,8 @@ struct ProductGridView: View {
                         ProductItemView(product: product)
                         }
                     }
-                    .background(
-                        NavigationLink(isActive: $showProductDetail, destination: {
-                            ProductDetailView(product: selectedProduct)
-                        }, label: {
-                            EmptyView()
-                        })
-
-                    )
                 }
             }
-        }
-        .navigationTitle(category.label)
-        
-
     }
 }
 

@@ -39,7 +39,7 @@ enum Category: CaseIterable {
             case .TV:
                 return "TV"
             case .frige:
-                return "Frige"
+                return "Fridge"
             case.decoration:
                 return "Decoration"
             }

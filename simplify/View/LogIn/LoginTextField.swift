@@ -116,5 +116,6 @@ struct LoginTextField: View {
 struct LoginTextField_Previews: PreviewProvider {
     static var previews: some View {
         LoginTextField()
+            .previewLayout(.sizeThatFits)
     }
 }
