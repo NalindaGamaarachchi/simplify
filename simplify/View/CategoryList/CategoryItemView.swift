@@ -18,6 +18,7 @@ struct CategoryItemView: View {
                 .frame(width: getRect().width / 2.5, height: getRect().height / 5)
                 
             Text(category.label)
+                .foregroundColor(Color.white)
                 .font(.system(size: 23).bold())
                 .frame(width: getRect().width / 2.5, height: getRect().height / 20)
                 .background(colorBrown4)

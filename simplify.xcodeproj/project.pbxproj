@@ -37,6 +37,7 @@
 		298F04C327A4F8A100436E07 /* ProductItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298F04C227A4F8A100436E07 /* ProductItemView.swift */; };
 		298F04C527A4F8B000436E07 /* ProductGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298F04C427A4F8B000436E07 /* ProductGridView.swift */; };
 		298F04C727A51AAB00436E07 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298F04C627A51AAB00436E07 /* ProductDetailView.swift */; };
+		29BAB39C27FBEC1F0084863E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BAB39B27FBEC1F0084863E /* ProfileView.swift */; };
 		29E07D8D274B7B9A001B42EE /* simplifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E07D8C274B7B9A001B42EE /* simplifyApp.swift */; };
 		29E07D8F274B7B9A001B42EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E07D8E274B7B9A001B42EE /* ContentView.swift */; };
 		29E07D91274B7B9D001B42EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29E07D90274B7B9D001B42EE /* Assets.xcassets */; };
@@ -105,6 +106,7 @@
 		298F04C227A4F8A100436E07 /* ProductItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemView.swift; sourceTree = "<group>"; };
 		298F04C427A4F8B000436E07 /* ProductGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductGridView.swift; sourceTree = "<group>"; };
 		298F04C627A51AAB00436E07 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		29BAB39B27FBEC1F0084863E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		29E07D89274B7B9A001B42EE /* simplify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simplify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E07D8C274B7B9A001B42EE /* simplifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simplifyApp.swift; sourceTree = "<group>"; };
 		29E07D8E274B7B9A001B42EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -260,8 +262,6 @@
 				29E07DC6274B7FA2001B42EE /* Profile */,
 				29E07DC5274B7F88001B42EE /* Cart */,
 				29E07DCA274B8111001B42EE /* CartAR */,
-				29E07DC7274B7FF5001B42EE /* SignIn */,
-				29E07DC8274B8022001B42EE /* SignOut */,
 				29E66CD72750B5AE00410B17 /* PlacementAR */,
 			);
 			path = View;
@@ -353,22 +353,9 @@
 		29E07DC6274B7FA2001B42EE /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				29BAB39B27FBEC1F0084863E /* ProfileView.swift */,
 			);
 			path = Profile;
-			sourceTree = "<group>";
-		};
-		29E07DC7274B7FF5001B42EE /* SignIn */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SignIn;
-			sourceTree = "<group>";
-		};
-		29E07DC8274B8022001B42EE /* SignOut */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SignOut;
 			sourceTree = "<group>";
 		};
 		29E07DC9274B80FF001B42EE /* ProductAR */ = {
@@ -578,6 +565,7 @@
 				29E0CF5C27F94E93002CDF30 /* OnBoardView.swift in Sources */,
 				296E010427BF5C8A0066FB2A /* PlacementARView.swift in Sources */,
 				2907322C27C7A841004956C4 /* HomeView.swift in Sources */,
+				29BAB39C27FBEC1F0084863E /* ProfileView.swift in Sources */,
 				29E0CF5E27F94EDA002CDF30 /* LogInModel.swift in Sources */,
 				290C894C27C519DD00DCAFFB /* CartItemView.swift in Sources */,
 				2907323127C7A92D004956C4 /* SearchView.swift in Sources */,

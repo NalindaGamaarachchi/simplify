@@ -20,7 +20,7 @@ struct CategoryGridView: View {
                     //
                     Text("Select your\nCategory")
                         .font(.system(size: 50).bold())
-                        .foregroundColor(.black)
+                        .foregroundColor(colorBrown4)
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding()
                         

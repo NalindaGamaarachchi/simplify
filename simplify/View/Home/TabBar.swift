@@ -8,39 +8,48 @@
 import SwiftUI
 
 struct TabBar: View {
+    init() {
+        UITabBar.appearance().backgroundColor = UIColor(backgroundColor)
+      }
     var body: some View {
+        
         TabView {
             HomeView()
                 .tabItem {
-                    Label("home", systemImage: "house")
+                    Label("Home", systemImage: "house")
                 }
+            
             
             CategoryGridView()
                 .tabItem {
-                    Label("home", systemImage: "house")
+                    Label("Category", systemImage: "list.bullet")
                 }
             
             SearchView()
                 .tabItem {
-                    Label("home", systemImage: "house")
+                    Label("Search", systemImage: "magnifyingglass")
+                }
+            
+            ProfileView()
+                .tabItem {
+                    Label("Profile", systemImage: "person")
+                    //add custom cart lable
                 }
             
             CartGridView()
                 .tabItem {
-                    Label("home", systemImage: "house")
+                    Label("Cart", systemImage: "cart")
                     //add custom cart lable
                 }
-            ProfileView()
-                .tabItem {
-                    Label("home", systemImage: "house")
-                    //add custom cart lable
-                }
+            
         }
+        .accentColor(primaryColor)
     }
 }
 
 struct TabBar_Previews: PreviewProvider {
     static var previews: some View {
         TabBar()
+            .previewLayout(.sizeThatFits)
     }
 }

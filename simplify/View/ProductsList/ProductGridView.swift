@@ -38,6 +38,5 @@ struct ProductGridView_Previews: PreviewProvider {
     static var previews: some View {
         ProductGridView(category: Category.chair)
             .previewLayout(.sizeThatFits)
-            .padding()
     }
 }
