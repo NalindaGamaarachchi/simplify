@@ -18,40 +18,30 @@ struct ProductItemView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .cornerRadius(20.0)
-                    .padding()
+            
+                    
                     
                 Text(product.name)
-                    .font(.title2)
+                    .font(.system(size: 33).bold())
                     .fontWeight(.bold)
                     .multilineTextAlignment(.leading)
                     
                 Text(product.description)
-                .font(.caption)
-                .foregroundColor(.gray)
+                    .font(.caption)
+                    .foregroundColor(.gray)
                     .lineLimit(2)
                     .truncationMode(.tail)
             
-                HStack {
-                    //create a binding var called rating (INT) and pass in to for each loop
-//                    ForEach(0..<5) { star in
-//                        Image(systemName: "star.fill")
-//                            .foregroundColor(Color.yellow)
-//                            .frame(width: 10, height: 10)
-//                            .padding(2)
-//                    }
-                    
-                    
-                    Text("LKR \(Int(product.price))")
-                        .font(.title2)
-                        .fontWeight(.bold)
-                }
+                Text("LKR \(Int(product.price))")
+                    .font(.title2)
+                    .fontWeight(.bold)
+
             
                 
             }
-            .padding()
-            .background(Color.white)
-            .cornerRadius(15)
-            .frame(width: 250, height: 250)
+        .padding(.horizontal, 10)
+        .padding(.vertical, 12)
+        .background(backgroundColor.cornerRadius(15))
     }
 }
 

@@ -9,9 +9,18 @@ import SwiftUI
 
 struct ControlVisibilityToggleButton: View {
     @Binding var isConcrolsVisibles: Bool
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
         HStack {
+            Button {
+                self.presentationMode.wrappedValue.dismiss()
+            } label: {
+                Image(systemName: "xmark")
+                    .padding()
+                    .font(.system(.title))
+                    .foregroundColor(.white)
+            }
             Spacer()
             
             Button {
@@ -26,7 +35,7 @@ struct ControlVisibilityToggleButton: View {
             }
         }
         .padding(.top, 50)
-        .padding(.trailing)
+        .padding(.horizontal)
     }
 }
 

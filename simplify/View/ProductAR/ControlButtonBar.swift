@@ -38,7 +38,7 @@ struct ControlButtonBar: View {
                     Image(systemName: "cart")
                 }
                 .padding(15)
-                .background(Color.blue.opacity(0.5))
+                .background(colorBrown3.opacity(0.5))
                 .clipShape(Capsule())
                 .font(.system(.title2))
                 .foregroundColor(.white)

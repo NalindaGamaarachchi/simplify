@@ -10,6 +10,7 @@ import SwiftUI
 struct TabBar: View {
     init() {
         UITabBar.appearance().backgroundColor = UIColor(backgroundColor)
+        UITabBar.appearance().isHidden = false
       }
     var body: some View {
         

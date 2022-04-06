@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct CategoryGridView: View {
-    @State  var showProductGrid = false
-    @State  var selectedCategory = Category.sofa
+    @State var showProductGrid: Bool = false
+    @State var selectedCategory = Category.sofa
     
     
     var body: some View {
@@ -39,7 +39,7 @@ struct CategoryGridView: View {
                         
                         
                     }
-                    NavigationLink(destination: ProductGridView(category: selectedCategory), isActive: $showProductGrid) {EmptyView()}
+                    NavigationLink(destination: ProductGridView(category: selectedCategory, showProductGrid: $showProductGrid), isActive: $showProductGrid) {EmptyView()}
                 }
                 .navigationBarHidden(true)
             }

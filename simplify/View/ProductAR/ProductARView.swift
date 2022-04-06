@@ -24,7 +24,10 @@ struct ProductARView: View {
             }
             
         }
+        .navigationBarHidden(true)
+        
     }
+    
 }
 
 struct ProductARView_Previews: PreviewProvider {
