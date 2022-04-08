@@ -32,4 +32,14 @@ class PlacementSettings: ObservableObject {
     @Published var placedProduct: Product?
     
     @Published var productInCart: [Product] = []
+    
+    func getTotal() -> String {
+        // need to quntity for products in product model
+        var total: Int = 0
+        productInCart.forEach { product in
+            let price = product.price
+            total += Int(price)
+        }
+        return String(total)
+    }
 }

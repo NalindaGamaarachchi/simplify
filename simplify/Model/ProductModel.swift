@@ -12,7 +12,7 @@ import Foundation
 import RealityKit
 import Combine
 
-class Product {
+class Product: Identifiable {
     var id: Int
     var name: String
     var category: Category

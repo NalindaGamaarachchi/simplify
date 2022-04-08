@@ -42,6 +42,7 @@ struct TabBar: View {
                     Label("Cart", systemImage: "cart")
                     //add custom cart lable
                 }
+                
             
         }
         .accentColor(primaryColor)

@@ -16,7 +16,7 @@ struct TestModels {
         let chair1 = Product(id: 01, name: "Chair 01", category: .chair, image: "chair_swan", price: 1000, description: "test description, test description, test description test description", scale: 0.25)
         let chair2 = Product(id: 02, name: "Chair 02", category: .chair, image: "fender_stratocaster", price: 1000, description: "", scale: 0.25)
         let chair3 = Product(id: 03, name: "Chair 03", category: .chair, image: "flower_tulip", price: 1000, description: "", scale: 0.25)
-        let chair4 = Product(id: 04, name: "Chair 04", category: .chair, image: "chair", price: 1000, description: "", scale: 0.25)
+        let chair4 = Product(id: 04, name: "Chair 04", category: .chair, image: "flower_tulip", price: 1000, description: "", scale: 0.25)
         self.all += [chair1, chair2, chair3, chair4]
         
         let table1 = Product(id: 05, name: "Table 01", category: .table, image: "table", price: 1000, description: "", scale: 1)

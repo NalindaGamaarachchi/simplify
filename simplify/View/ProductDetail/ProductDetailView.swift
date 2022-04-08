@@ -78,9 +78,9 @@ struct ProductDetailView: View {
                     .padding(.vertical, 20)
                     
                     Button {
-                        //
+                        addToCart()
                     } label: {
-                        Text("Add to cart")
+                        Text(isInCart() ? "Added to cart" : "Add to cart")
                             .font(.system(size: 22).bold())
                             .foregroundColor(colorBrown1)
                             .padding(.vertical, 20)
@@ -104,6 +104,21 @@ struct ProductDetailView: View {
         .navigationBarHidden(true)
         .background(backgroundColor.ignoresSafeArea())
 
+    }
+    func addToCart() {
+        
+        if let index = placementSettings.productInCart.firstIndex(where: { product in
+            return self.product.id == product.id}) {
+                placementSettings.productInCart.remove(at: index)
+            }else {
+                placementSettings.productInCart.append(product)
+            }
+    }
+    
+    func isInCart() -> Bool {
+        return placementSettings.productInCart.contains { product in
+            return self.product.id == product.id
+        }
     }
 }
 
