@@ -34,8 +34,8 @@ struct ProductDetailView: View {
                     }
                     Spacer()
                     Button {
-                        //product.loadModelEntity()
-                        //self.placementSettings.selectedProduct = product
+                        product.loadModelEntity()
+                        self.placementSettings.selectedProduct = product
                         showProductAR.toggle()
                         
                     } label: {
