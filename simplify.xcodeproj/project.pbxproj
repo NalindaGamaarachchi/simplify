@@ -21,6 +21,12 @@
 		290C895027C5285800DCAFFB /* CartControlButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290C894F27C5285800DCAFFB /* CartControlButtonBar.swift */; };
 		290C895227C5286B00DCAFFB /* CartControlVisibilityToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290C895127C5286B00DCAFFB /* CartControlVisibilityToggleButton.swift */; };
 		290C895427C63CA600DCAFFB /* CartListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290C895327C63CA600DCAFFB /* CartListView.swift */; };
+		2958A35A2831529200DF19B5 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 2958A3592831529200DF19B5 /* FirebaseAuth */; };
+		2958A35C2831529200DF19B5 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 2958A35B2831529200DF19B5 /* FirebaseAuthCombine-Community */; };
+		2958A35E2831529200DF19B5 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 2958A35D2831529200DF19B5 /* FirebaseFirestore */; };
+		2958A3602831529200DF19B5 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 2958A35F2831529200DF19B5 /* FirebaseFirestoreCombine-Community */; };
+		2958A3622831529200DF19B5 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 2958A3612831529200DF19B5 /* FirebaseStorage */; };
+		2958A3642831529200DF19B5 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 2958A3632831529200DF19B5 /* FirebaseStorageCombine-Community */; };
 		296114F927B78C0D00104141 /* testModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296114F827B78C0D00104141 /* testModel.swift */; };
 		296E010227BF59900066FB2A /* PlacementSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296E010127BF59900066FB2A /* PlacementSettings.swift */; };
 		296E010427BF5C8A0066FB2A /* PlacementARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296E010327BF5C8A0066FB2A /* PlacementARView.swift */; };
@@ -141,6 +147,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				296E010727C0A22E0066FB2A /* FocusEntity in Frameworks */,
+				2958A3642831529200DF19B5 /* FirebaseStorageCombine-Community in Frameworks */,
+				2958A35E2831529200DF19B5 /* FirebaseFirestore in Frameworks */,
+				2958A35C2831529200DF19B5 /* FirebaseAuthCombine-Community in Frameworks */,
+				2958A3602831529200DF19B5 /* FirebaseFirestoreCombine-Community in Frameworks */,
+				2958A35A2831529200DF19B5 /* FirebaseAuth in Frameworks */,
+				2958A3622831529200DF19B5 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +443,12 @@
 			name = simplify;
 			packageProductDependencies = (
 				296E010627C0A22E0066FB2A /* FocusEntity */,
+				2958A3592831529200DF19B5 /* FirebaseAuth */,
+				2958A35B2831529200DF19B5 /* FirebaseAuthCombine-Community */,
+				2958A35D2831529200DF19B5 /* FirebaseFirestore */,
+				2958A35F2831529200DF19B5 /* FirebaseFirestoreCombine-Community */,
+				2958A3612831529200DF19B5 /* FirebaseStorage */,
+				2958A3632831529200DF19B5 /* FirebaseStorageCombine-Community */,
 			);
 			productName = simplify;
 			productReference = 29E07D89274B7B9A001B42EE /* simplify.app */;
@@ -506,6 +524,7 @@
 			mainGroup = 29E07D80274B7B9A001B42EE;
 			packageReferences = (
 				296E010527C0A22E0066FB2A /* XCRemoteSwiftPackageReference "FocusEntity" */,
+				2958A3582831529200DF19B5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 29E07D8A274B7B9A001B42EE /* Products */;
 			projectDirPath = "";
@@ -770,7 +789,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Nalinda-Gamaarachchi.simplify";
+				PRODUCT_BUNDLE_IDENTIFIER = "Nalinda-Gamaarachchi.simplify1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -801,7 +820,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Nalinda-Gamaarachchi.simplify";
+				PRODUCT_BUNDLE_IDENTIFIER = "Nalinda-Gamaarachchi.simplify1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -927,6 +946,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		2958A3582831529200DF19B5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
 		296E010527C0A22E0066FB2A /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
@@ -938,6 +965,36 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2958A3592831529200DF19B5 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2958A3582831529200DF19B5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		2958A35B2831529200DF19B5 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2958A3582831529200DF19B5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		2958A35D2831529200DF19B5 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2958A3582831529200DF19B5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		2958A35F2831529200DF19B5 /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2958A3582831529200DF19B5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		2958A3612831529200DF19B5 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2958A3582831529200DF19B5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		2958A3632831529200DF19B5 /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2958A3582831529200DF19B5 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
 		296E010627C0A22E0066FB2A /* FocusEntity */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 296E010527C0A22E0066FB2A /* XCRemoteSwiftPackageReference "FocusEntity" */;
