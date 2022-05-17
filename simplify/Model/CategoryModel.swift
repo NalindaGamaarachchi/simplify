@@ -13,7 +13,7 @@ import Foundation
 //    let image: String
 //}
 
-enum Category: CaseIterable {
+enum Category: String, CaseIterable {
     case chair
     case table
     case sofa

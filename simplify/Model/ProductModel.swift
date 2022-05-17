@@ -13,7 +13,7 @@ import RealityKit
 import Combine
 
 class Product: Identifiable {
-    var id: Int
+    var id: String = UUID().uuidString
     var name: String
     var category: Category
     var image: String
@@ -28,7 +28,7 @@ class Product: Identifiable {
         self.id = id
         self.name = name
         self.category = category
-        self.image = image
+        self.image = UIImage(named: name) ?? UIImage(systemName: "photo")!
         self.price = price
         self.description = description
         self.scale = scale

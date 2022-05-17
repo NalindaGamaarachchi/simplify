@@ -13,10 +13,11 @@ struct ProductGridView: View {
     
     @State var showProductDetail = false
     @State var selectedProduct: Product = Product(id: 01, name: "Chair 01", category: .chair, image: "chair_swan", price: 1000, description: "", scale: 1)
-    let testModel = TestModels()
+    
+    @ObservedObject private var viewModel = ModelsViewModel()
     
     var body: some View {
-        let productByCategory = testModel.get(category: category)
+        let productByCategory = viewModel.products.filter({$0.category == category})
         VStack {
             HStack {
                 Button {
@@ -34,7 +35,7 @@ struct ProductGridView: View {
             
             ScrollView (){
                 LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 20), count: 2), spacing: 25) {
-                    ForEach(0..<productByCategory.count) { index in
+                    ForEach(0..<productByCategory.count, id: \.self) { index in
                         let product = productByCategory[index]
                         Button {
                             showProductDetail.toggle()
@@ -47,6 +48,9 @@ struct ProductGridView: View {
                 .navigationBarHidden(true)
             }
             .padding()
+        }
+        .onAppear() {
+            self.viewModel.fetchData()
         }
         NavigationLink(isActive: $showProductDetail, destination: {
             ProductDetailView(product: selectedProduct, showProductAR: showProductDetail)
