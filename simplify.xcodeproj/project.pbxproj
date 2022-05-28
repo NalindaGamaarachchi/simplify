@@ -64,6 +64,7 @@
 		29E66CDD2750B7B600410B17 /* ControlVisibilityToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E66CDC2750B7B600410B17 /* ControlVisibilityToggleButton.swift */; };
 		29E66CDF2750B7CC00410B17 /* ControlButtonBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E66CDE2750B7CC00410B17 /* ControlButtonBar.swift */; };
 		29E66CE12750D0DC00410B17 /* ControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E66CE02750D0DC00410B17 /* ControlView.swift */; };
+		29FEEA8528421A7600A1CE58 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29FEEA8428421A7600A1CE58 /* GoogleService-Info.plist */; };
 		4DE80AA62833DDCF00B78460 /* ModelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE80AA52833DDCF00B78460 /* ModelViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -138,6 +139,7 @@
 		29E66CDC2750B7B600410B17 /* ControlVisibilityToggleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlVisibilityToggleButton.swift; sourceTree = "<group>"; };
 		29E66CDE2750B7CC00410B17 /* ControlButtonBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButtonBar.swift; sourceTree = "<group>"; };
 		29E66CE02750D0DC00410B17 /* ControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlView.swift; sourceTree = "<group>"; };
+		29FEEA8428421A7600A1CE58 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4DE80AA52833DDCF00B78460 /* ModelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -195,6 +197,7 @@
 		29E07D80274B7B9A001B42EE = {
 			isa = PBXGroup;
 			children = (
+				29FEEA8428421A7600A1CE58 /* GoogleService-Info.plist */,
 				29E07D8B274B7B9A001B42EE /* simplify */,
 				29E07DA1274B7B9E001B42EE /* simplifyTests */,
 				29E07DAB274B7B9E001B42EE /* simplifyUITests */,
@@ -544,6 +547,7 @@
 			files = (
 				298F04B527A3C0FD00436E07 /* category.json in Resources */,
 				29E07D94274B7B9D001B42EE /* Preview Assets.xcassets in Resources */,
+				29FEEA8528421A7600A1CE58 /* GoogleService-Info.plist in Resources */,
 				2908424F2750B1F700AFE53C /* flower_tulip.usdz in Resources */,
 				290842512750B1F700AFE53C /* fender_stratocaster.usdz in Resources */,
 				2908424E2750B1F700AFE53C /* gramophone.usdz in Resources */,

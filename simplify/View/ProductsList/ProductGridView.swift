@@ -10,9 +10,9 @@ import SwiftUI
 struct ProductGridView: View {
     @State var category: Category
     @Binding var showProductGrid: Bool
-    
+     
     @State var showProductDetail = false
-    @State var selectedProduct: Product = Product(id: 01, name: "Chair 01", category: .chair, image: "chair_swan", price: 1000, description: "", scale: 1)
+    @State var selectedProduct: Product = Product(name: "Chair 01", category: .chair, image: "chair_swan", price: 1000, description: "", scale: 1)
     
     @ObservedObject private var viewModel = ModelsViewModel()
     
@@ -52,6 +52,7 @@ struct ProductGridView: View {
         .onAppear() {
             self.viewModel.fetchData()
         }
+        
         NavigationLink(isActive: $showProductDetail, destination: {
             ProductDetailView(product: selectedProduct, showProductAR: showProductDetail)
     }, label: {

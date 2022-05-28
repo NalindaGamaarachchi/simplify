@@ -46,6 +46,7 @@ struct TabBar: View {
             
         }
         .accentColor(primaryColor)
+        
     }
 }
 

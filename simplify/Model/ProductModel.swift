@@ -24,11 +24,10 @@ class Product: Identifiable {
     
     private var cancellable: AnyCancellable?
     
-    init(id: Int, name: String, category: Category, image: String, price: Float, description: String, scale: Float) {
-        self.id = id
+    init(name: String, category: Category, image: String, price: Float, description: String, scale: Float) {
         self.name = name
         self.category = category
-        self.image = UIImage(named: name) ?? UIImage(systemName: "photo")!
+        self.image = image
         self.price = price
         self.description = description
         self.scale = scale

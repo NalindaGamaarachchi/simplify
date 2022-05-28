@@ -32,9 +32,9 @@ struct CartItemView: View {
     }
 }
 
-struct CartItemView_Previews: PreviewProvider {
-    static var previews: some View {
-        CartItemView(product: Product(id: 01, name: "Chair 01", category: .chair, image: "chair_swan", price: 1000, description: "test description, test description, test description test description", scale: 1))
-            .previewLayout(.sizeThatFits)
-    }
-}
+//struct CartItemView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        CartItemView(product: Product(id: 01, name: "Chair 01", category: .chair, image: "chair_swan", price: 1000, description: "test description, test description, test description test description", scale: 1))
+//            .previewLayout(.sizeThatFits)
+//    }
+//}
