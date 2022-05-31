@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import RealityKit
 
 struct CartListView: View {
     @EnvironmentObject var placementSettings: PlacementSettings
@@ -13,34 +14,21 @@ struct CartListView: View {
     
     var body: some View {
         // after creating cart grid place that grid here chane only button action
-        let cartProducts = placementSettings.productInCart
-        NavigationView {
-            ScrollView(.horizontal, showsIndicators: false) {
-                LazyVGrid(columns: cartGridLayout, spacing: rowSpacing) {
-                    ForEach(0..<cartProducts.count) { index in
-                        let product = cartProducts[index]
-                        Button {
-                            print(product.name)
-                        } label: {
-                            Image(systemName: product.image)
-                                    .resizable()
-                                    .frame(width: 300, height: 100)
-                            
-                        }
-
-                        
+        let productInCart = self.placementSettings.productInCart
+        
+            List {
+                ForEach(productInCart) { product in
+                    Button {
+                        product.loadModelEntity()
+                        self.placementSettings.selectedProduct = product
+                        showCartList.toggle()
+                    } label: {
+                        CartItemView(product: product)
                     }
                 }
-                .padding()
             }
-            .navigationBarTitle(Text("cart list"))
-            .navigationBarItems(trailing: Button(action: {
-                self.showCartList.toggle()
-            }, label: {
-                Text("Done")
-            }))
-        }
     }
+            
 }
 
 //struct CartListView_Previews: PreviewProvider {

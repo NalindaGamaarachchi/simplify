@@ -10,13 +10,13 @@ import SwiftUI
 struct CartARView: View {
     @EnvironmentObject var placementSettings: PlacementSettings
     @State private var isConcrolsVisiblesCart: Bool = true
-    @State private var showCartList: Bool = false
+    @State private var showCartList: Bool = true
     
     var body: some View {
         
         ZStack(alignment: .bottom) {
             
-//            ARViewContainer()
+            ARViewContainer()
             
             if self.placementSettings.selectedProduct == nil {
                 CartControlView(isConcrolsVisiblesCart: $isConcrolsVisiblesCart, showCartList: $showCartList)
@@ -32,5 +32,6 @@ struct CartARView_Previews: PreviewProvider {
         CartARView()
             .background(Color.black.opacity(0.3))
             .edgesIgnoringSafeArea(.all)
+            .environmentObject(PlacementSettings())
     }
 }

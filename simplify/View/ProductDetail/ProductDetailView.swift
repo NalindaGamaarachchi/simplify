@@ -108,7 +108,7 @@ struct ProductDetailView: View {
     func addToCart() {
         
         if let index = placementSettings.productInCart.firstIndex(where: { product in
-            return self.product.id == product.id}) {
+            return self.product.name == product.name}) {
                 placementSettings.productInCart.remove(at: index)
             }else {
                 placementSettings.productInCart.append(product)
@@ -117,7 +117,7 @@ struct ProductDetailView: View {
     
     func isInCart() -> Bool {
         return placementSettings.productInCart.contains { product in
-            return self.product.id == product.id
+            return self.product.name == product.name
         }
     }
 }

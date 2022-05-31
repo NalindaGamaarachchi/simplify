@@ -18,8 +18,8 @@ struct CartGridView: View {
         
         let productInCart = self.placementSettings.productInCart
         NavigationView {
-                
             VStack(spacing: 10) {
+                
                 ScrollView(.vertical, showsIndicators: false) {
                     VStack {
                         HStack {
@@ -28,14 +28,20 @@ struct CartGridView: View {
                             
                             Spacer()
                             
-                            Button {
-                                //
-                            } label: {
+                            NavigationLink(destination:CartARView()) {
                                 Text("AR View")
                                     .font(.system(size: 22).bold())
                                     .padding(.horizontal)
                             }
                             .opacity(placementSettings.productInCart.isEmpty ? 0 : 1)
+//                            Button {
+//                                showCartAR.toggle()
+//                            } label: {
+//                                Text("AR View")
+//                                    .font(.system(size: 22).bold())
+//                                    .padding(.horizontal)
+//                            }
+//                            .opacity(placementSettings.productInCart.isEmpty ? 0 : 1)
                             
                             Button {
                                 withAnimation {
@@ -116,8 +122,10 @@ struct CartGridView: View {
                 .navigationBarHidden(true)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(backgroundColor.ignoresSafeArea())
+                
             }
         }
+        
     }
     func deleteProductFromCart(product: Product) {
         if let index = placementSettings.productInCart.firstIndex(where: { currentProduct in

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ControlView: View {
     @Binding var isConcrolsVisibles: Bool
+    @EnvironmentObject var placementSettings: PlacementSettings
     
     var body: some View {
         VStack {
@@ -17,7 +18,7 @@ struct ControlView: View {
             Spacer()
             
             if isConcrolsVisibles {
-                ControlButtonBar()
+                ControlButtonBar(product: placementSettings.placedProduct ?? Product(name: "Chair 03", category: .chair, image: "chair_swa", price: 1000, description: "kfjef hfkjashfkjashf kah fjahsfk asjhfkashjf ajshfkasjfh kajshf ksaf", scale: 1))
             }
         }
     }

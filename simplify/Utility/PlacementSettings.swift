@@ -42,4 +42,5 @@ class PlacementSettings: ObservableObject {
         }
         return String(total)
     }
+    
 }
