@@ -15,7 +15,6 @@ struct simplifyApp: App {
     init() {
         FirebaseApp.configure()
         
-        // Anonymous authentication with Firebase
         Auth.auth().signInAnonymously { authResult, error in
             guard let user = authResult?.user else {
                 print("FAILED: Anonymous Authentication with Firebase")

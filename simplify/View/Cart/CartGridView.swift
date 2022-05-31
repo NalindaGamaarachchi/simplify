@@ -34,15 +34,7 @@ struct CartGridView: View {
                                     .padding(.horizontal)
                             }
                             .opacity(placementSettings.productInCart.isEmpty ? 0 : 1)
-//                            Button {
-//                                showCartAR.toggle()
-//                            } label: {
-//                                Text("AR View")
-//                                    .font(.system(size: 22).bold())
-//                                    .padding(.horizontal)
-//                            }
-//                            .opacity(placementSettings.productInCart.isEmpty ? 0 : 1)
-                            
+
                             Button {
                                 withAnimation {
                                     showDeleteOption.toggle()

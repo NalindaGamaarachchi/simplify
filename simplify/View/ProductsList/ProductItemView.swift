@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProductItemView: View {
     let product : Product
-//    var animation: Namespace.ID
+
     
     var body: some View {
 

@@ -13,24 +13,24 @@ struct CartControlButtonBar: View {
     var body: some View {
         HStack {
             Spacer()
-            Button {
-                print("DEBUG: recently Products button pressed")
-            } label: {
-                //We need to chanege this icon
-                Image(systemName: "cube.fill")
-                    .padding(15)
-                    .font(.system(.title))
-                    .foregroundColor(.white)
-            }
-
-            
-            Spacer()
+//            Button {
+//                print("DEBUG: recently Products button pressed")
+//            } label: {
+//                //We need to chanege this icon
+//                Image(systemName: "cube.fill")
+//                    .padding(15)
+//                    .font(.system(.title))
+//                    .foregroundColor(.white)
+//            }
+//
+//
+//            Spacer()
             
             Button {
                 print("DEBUG: Similer Products button pressed")
                 self.showCartList.toggle()
             } label: {
-                Image(systemName: "slider.horizontal.3")
+                Image(systemName: "plus.square.dashed")
                     .padding(15)
                     .font(.system(.title))
                     .foregroundColor(.white)

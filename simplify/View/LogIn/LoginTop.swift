@@ -17,8 +17,6 @@ struct LoginTop: View {
             .padding()
             .background(
                 ZStack {
-                    // Gradiant Circle
-                    // Need maching colors
                     LinearGradient(colors: [colorBrown1, colorBrown2, colorBrown3, colorBrown4], startPoint: .top, endPoint: .bottom)
                         .frame(width: 100, height: 100)
                         .clipShape(Circle())

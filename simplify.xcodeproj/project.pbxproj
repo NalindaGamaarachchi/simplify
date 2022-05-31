@@ -45,6 +45,14 @@
 		298F04C527A4F8B000436E07 /* ProductGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298F04C427A4F8B000436E07 /* ProductGridView.swift */; };
 		298F04C727A51AAB00436E07 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298F04C627A51AAB00436E07 /* ProductDetailView.swift */; };
 		29BAB39C27FBEC1F0084863E /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BAB39B27FBEC1F0084863E /* ProfileView.swift */; };
+		29D6CEF32846434300B01CB6 /* table1.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 29D6CEEB2846433D00B01CB6 /* table1.usdz */; };
+		29D6CEF42846434300B01CB6 /* chair4.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 29D6CEEC2846433E00B01CB6 /* chair4.usdz */; };
+		29D6CEF52846434300B01CB6 /* chair2.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 29D6CEED2846433F00B01CB6 /* chair2.usdz */; };
+		29D6CEF62846434300B01CB6 /* chair3.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 29D6CEEE2846434000B01CB6 /* chair3.usdz */; };
+		29D6CEF72846434300B01CB6 /* table2.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 29D6CEEF2846434100B01CB6 /* table2.usdz */; };
+		29D6CEF82846434300B01CB6 /* table3.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 29D6CEF02846434200B01CB6 /* table3.usdz */; };
+		29D6CEF92846434300B01CB6 /* chair1.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 29D6CEF12846434200B01CB6 /* chair1.usdz */; };
+		29D6CEFA2846434300B01CB6 /* sofa1.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 29D6CEF22846434300B01CB6 /* sofa1.usdz */; };
 		29E07D8D274B7B9A001B42EE /* simplifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E07D8C274B7B9A001B42EE /* simplifyApp.swift */; };
 		29E07D8F274B7B9A001B42EE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E07D8E274B7B9A001B42EE /* ContentView.swift */; };
 		29E07D91274B7B9D001B42EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29E07D90274B7B9D001B42EE /* Assets.xcassets */; };
@@ -117,6 +125,14 @@
 		298F04C427A4F8B000436E07 /* ProductGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductGridView.swift; sourceTree = "<group>"; };
 		298F04C627A51AAB00436E07 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
 		29BAB39B27FBEC1F0084863E /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		29D6CEEB2846433D00B01CB6 /* table1.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = table1.usdz; sourceTree = "<group>"; };
+		29D6CEEC2846433E00B01CB6 /* chair4.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair4.usdz; sourceTree = "<group>"; };
+		29D6CEED2846433F00B01CB6 /* chair2.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair2.usdz; sourceTree = "<group>"; };
+		29D6CEEE2846434000B01CB6 /* chair3.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair3.usdz; sourceTree = "<group>"; };
+		29D6CEEF2846434100B01CB6 /* table2.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = table2.usdz; sourceTree = "<group>"; };
+		29D6CEF02846434200B01CB6 /* table3.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = table3.usdz; sourceTree = "<group>"; };
+		29D6CEF12846434200B01CB6 /* chair1.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair1.usdz; sourceTree = "<group>"; };
+		29D6CEF22846434300B01CB6 /* sofa1.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = sofa1.usdz; sourceTree = "<group>"; };
 		29E07D89274B7B9A001B42EE /* simplify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simplify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29E07D8C274B7B9A001B42EE /* simplifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simplifyApp.swift; sourceTree = "<group>"; };
 		29E07D8E274B7B9A001B42EE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -186,6 +202,14 @@
 		290842492750B1C700AFE53C /* Sample 3D Assets */ = {
 			isa = PBXGroup;
 			children = (
+				29D6CEF12846434200B01CB6 /* chair1.usdz */,
+				29D6CEED2846433F00B01CB6 /* chair2.usdz */,
+				29D6CEEE2846434000B01CB6 /* chair3.usdz */,
+				29D6CEEC2846433E00B01CB6 /* chair4.usdz */,
+				29D6CEF22846434300B01CB6 /* sofa1.usdz */,
+				29D6CEEB2846433D00B01CB6 /* table1.usdz */,
+				29D6CEEF2846434100B01CB6 /* table2.usdz */,
+				29D6CEF02846434200B01CB6 /* table3.usdz */,
 				2908424C2750B1F700AFE53C /* chair_swan.usdz */,
 				2908424D2750B1F700AFE53C /* fender_stratocaster.usdz */,
 				2908424B2750B1F600AFE53C /* flower_tulip.usdz */,
@@ -545,10 +569,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29D6CEF52846434300B01CB6 /* chair2.usdz in Resources */,
+				29D6CEF62846434300B01CB6 /* chair3.usdz in Resources */,
+				29D6CEF42846434300B01CB6 /* chair4.usdz in Resources */,
+				29D6CEF82846434300B01CB6 /* table3.usdz in Resources */,
 				298F04B527A3C0FD00436E07 /* category.json in Resources */,
 				29E07D94274B7B9D001B42EE /* Preview Assets.xcassets in Resources */,
+				29D6CEF72846434300B01CB6 /* table2.usdz in Resources */,
+				29D6CEF92846434300B01CB6 /* chair1.usdz in Resources */,
+				29D6CEF32846434300B01CB6 /* table1.usdz in Resources */,
 				29FEEA8528421A7600A1CE58 /* GoogleService-Info.plist in Resources */,
 				2908424F2750B1F700AFE53C /* flower_tulip.usdz in Resources */,
+				29D6CEFA2846434300B01CB6 /* sofa1.usdz in Resources */,
 				290842512750B1F700AFE53C /* fender_stratocaster.usdz in Resources */,
 				2908424E2750B1F700AFE53C /* gramophone.usdz in Resources */,
 				298F04BF27A4F76D00436E07 /* product.json in Resources */,
