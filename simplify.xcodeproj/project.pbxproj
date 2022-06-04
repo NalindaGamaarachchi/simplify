@@ -363,8 +363,8 @@
 		29E07DC2274B7ED1001B42EE /* CategoryList */ = {
 			isa = PBXGroup;
 			children = (
-				298F04BA27A3C1F800436E07 /* CategoryItemView.swift */,
 				298F04BC27A3C52200436E07 /* CategoryGridView.swift */,
+				298F04BA27A3C1F800436E07 /* CategoryItemView.swift */,
 			);
 			path = CategoryList;
 			sourceTree = "<group>";

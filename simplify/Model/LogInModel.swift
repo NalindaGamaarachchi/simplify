@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import FirebaseAuth
+import Firebase
 
 class LogInModel: ObservableObject {
     
@@ -20,14 +22,11 @@ class LogInModel: ObservableObject {
     @Published var showReEnterPassword: Bool = false
     
     func Login() {
-        // do action
+        Auth.auth().signIn(withEmail: email, password: password)
     }
     
     func Register() {
-        //Do action
+        Auth.auth().createUser(withEmail: email, password: password)
     }
     
-    func ForgotPassword() {
-        //Do action
-    }
 }

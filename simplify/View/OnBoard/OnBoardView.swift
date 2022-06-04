@@ -16,7 +16,6 @@ struct OnBoardView: View {
                 .font(.system(size: 40))
                 .fontWeight(.semibold)
 
-            // find a png for this photo
             Image("OnBord")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
